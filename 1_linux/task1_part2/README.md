@@ -13,11 +13,11 @@ Task1.Part2
 
 2) What command can be used to determine the type of file (for example, text or binary)? Give an example.
 
->guru@ubuntu:~$ file ./Pictures/ls_grup.gif
+>**guru@ubuntu:~$ file ./Pictures/ls_grup.gif**
 >
 >./Pictures/ls_grup.gif: GIF image data, version 89a, 792 x 456
 > 
->guru@ubuntu:~$ file /usr/bin/bash
+>**guru@ubuntu:~$ file /usr/bin/bash**
 >
 >/usr/bin/bash: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV),
 >
@@ -25,13 +25,33 @@ Task1.Part2
 >
 >BuildID[sha1]=a6cb40078351e05121d46daa768e271846d5cc54, for GNU/Linux 3.2.0, stripped
 
-3) Master the skills of navigating the file system using relative and absolute paths. How can you go back to your home directory from anywhere in the filesystem?
-4) Become familiar with the various options for the ls command. Give examples of listing directories using different keys. Explain the information displayed on the terminal using the -l and -a switches.
-5) Perform the following sequence of operations: - create a subdirectory in the home directory; - in this subdirectory create a file containing information about directories located in the root directory (using I/O redirection operations);
+3) Master the skills of navigating the file system using relative and absolute paths.
+   How can you go back to your home directory from anywhere in the filesystem?
+   
+![img.png](img/cd.gif)
+
+4) Become familiar with the various options for the ls command.
+   Give examples of listing directories using different keys.
+   Explain the information displayed on the terminal using the -l and -a switches.
+
+![img.png](img/ls.png)
+
+![img.png](img/ls_l.png)
+
+![img.png](img/ls_a.png)
+
+5) Perform the following sequence of operations:
+- create a subdirectory in the home directory;
+- in this subdirectory create a file containing information about directories
+  located in the root directory (using I/O redirection operations);
 - view the created file;
-- copy the created file to your home directory using relative and absolute addressing.
+- copy the created file to your home directory using relative
+  and absolute addressing.
 - delete the previously created subdirectory with the file requesting removal;
 - delete the file copied to the home directory.
+
+![img.png](img/touch_rm.gif)
+
 6) Perform the following sequence of operations:
 - create a subdirectory test in the home directory;
 - copy the .bash_history file to this directory while changing its name to labwork2;

@@ -20,6 +20,7 @@ File:
 
 >andrea@ubuntu:/home/guru$ sudo chfn guru
 
+
 ![img.png](img/changeFullName.png)
 
 5) Become familiar with the Linux help system and the man and info commands.

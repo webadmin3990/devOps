@@ -44,5 +44,12 @@ File:
 7) * Describe in plans that you are working on laboratory work 1.
     Tip: You should read the documentation for the finger command.
      
+>guru@ubuntu:~$ finger
+>
+> guru@ubuntu:~$ finger -l
+
+     
+![img.png](img/finger.gif)
+     
 8) * List the contents of the home directory using the ls command, define its files and directories.
     Hint: Use the help system to familiarize yourself with the ls command.

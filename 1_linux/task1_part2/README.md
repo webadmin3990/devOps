@@ -95,6 +95,12 @@ concepts;
 ![img.png](img/touch_rm.gif)
 
 7) Using the locate utility, find all files that contain the squid and traceroute sequence.
+>sudo apt install locate
+>
+>sudo updatedb
+>
+>locate -A squid traceroute
+
 8) Determine which partitions are mounted in the system, as well as the types of these partitions.
 9) Count the number of lines containing a given sequence of characters in a given file.
 10) Using the find command, find all files in the /etc directory containing the host character sequence.

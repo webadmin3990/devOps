@@ -53,3 +53,8 @@ File:
      
 8) * List the contents of the home directory using the ls command, define its files and directories.
     Hint: Use the help system to familiarize yourself with the ls command.
+     
+>guru@ubuntu:~$ ls -l
+
+![img.png](img/ls.png)
+

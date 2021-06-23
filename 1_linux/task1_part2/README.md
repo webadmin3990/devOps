@@ -9,7 +9,9 @@ Task1.Part2
 > 
 >ls -l / | grep [a-f]
 
+
 ![img.png](img/ls_grup.gif)
+
 
 2) What command can be used to determine the type of file (for example, text or binary)? Give an example.
 
@@ -29,6 +31,7 @@ Task1.Part2
    How can you go back to your home directory from anywhere in the filesystem?
    
 ![img.png](img/cd.gif)
+
 
 4) Become familiar with the various options for the ls command.
    Give examples of listing directories using different keys.
@@ -50,7 +53,9 @@ Task1.Part2
 - delete the previously created subdirectory with the file requesting removal;
 - delete the file copied to the home directory.
 
+
 ![img.png](img/touch_rm.gif)
+
 
 6) Perform the following sequence of operations:
 - create a subdirectory test in the home directory;

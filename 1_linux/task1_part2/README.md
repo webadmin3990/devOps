@@ -102,7 +102,15 @@ concepts;
 >locate -A squid traceroute
 
 8) Determine which partitions are mounted in the system, as well as the types of these partitions.
+
+>sudo fdisk -l
+
+![img.png](img/fdisk.png)
+
 9) Count the number of lines containing a given sequence of characters in a given file.
+
+![img.png](img/wc.png)
+
 10) Using the find command, find all files in the /etc directory containing the host character sequence.
 11) List all objects in /etc that contain the ss character sequence.
     How can I duplicate a similar command using a bunch of grep?

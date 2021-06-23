@@ -33,6 +33,10 @@ File:
 6) Explore the more and less commands using the help system.
    View the contents of files .bash* using commands.
    
+![img.png](img/manMore.png)
+
+![img.png](img/manLess.png)
+   
 7) * Describe in plans that you are working on laboratory work 1.
     Tip: You should read the documentation for the finger command.
      

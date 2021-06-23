@@ -36,6 +36,8 @@ File:
 ![img.png](img/manMore.png)
 
 ![img.png](img/manLess.png)
+
+![img.png](img/moreBash.gif)
    
 7) * Describe in plans that you are working on laboratory work 1.
     Tip: You should read the documentation for the finger command.

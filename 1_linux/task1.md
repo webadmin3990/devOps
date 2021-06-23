@@ -9,7 +9,8 @@ Task1. Part 1
 
 File:
 >/etc/passwd
-> /etc/shadow
+
+>/etc/shadow
 
 3) Determine the users registered in the system, as well as what commands they execute. What additional information can be gleaned from the command execution
 

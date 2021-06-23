@@ -66,6 +66,32 @@ concepts;
 - rename the soft link file to symb_lnk_labwork2 file;
 - then delete the labwork2. What changes have occurred and why?
 
+>mkdir Dir1
+>
+>cd Dir1/
+>
+>cp ~/.bash_history labwork2
+> 
+>ls -l
+>
+>ln labwork2 hard_labwork2
+>
+>ln -s labwork2 soft_labwork2
+>
+>ls -l
+>
+>cat soft_labwork2
+>
+>ls -l
+>
+>mv hard_labwork2 hard_lnk_labwork2
+>
+>mv soft_labwork2 symb_lnk_labwork2
+>rm labwork2
+>
+>ls -l
+
+
 ![img.png](img/touch_rm.gif)
 
 7) Using the locate utility, find all files that contain the squid and traceroute sequence.

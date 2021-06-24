@@ -112,10 +112,26 @@ concepts;
 ![img.png](img/wc.png)
 
 10) Using the find command, find all files in the /etc directory containing the host character sequence.
+    
+![img.png](img/find.png)
+
 11) List all objects in /etc that contain the ss character sequence.
+    
+>guru@ubuntu:~$ find /etc -name "ss"
+
     How can I duplicate a similar command using a bunch of grep?
+    
+>guru@ubuntu:~$ grep -rl "ss" /etc/
+
 12) Organize a screen-by-screen print of the contents of the /etc directory.
     Hint: You must use stream redirection operations.
+    
+>guru@ubuntu:~$ ls -la /etc > test.txt
+>
+>guru@ubuntu:~$ less test.txt
+
+![img.png](img/ls_less.gif)
+
 13) What are the types of devices and how to determine the type of device?
     Give examples.
 14) How to determine the type of file in the system, what types of files are there?

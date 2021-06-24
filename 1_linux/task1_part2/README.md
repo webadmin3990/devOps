@@ -134,5 +134,25 @@ concepts;
 
 13) What are the types of devices and how to determine the type of device?
     Give examples.
+>guru@ubuntu:~$ lspci
+> 
+>guru@ubuntu:~$ lsusb
+> 
+![img.png](img/lsusb.png)
+
+>guru@ubuntu:~$ lsscsi
+> 
+![img.png](img/lsscsi.png)
+
+
 14) How to determine the type of file in the system, what types of files are there?
+
+>guru@ubuntu:~$ file *
+>
+![img.png](img/file.png)
+
 15) * List the first 5 directory files that were recently accessed in the /etc directory.
+    
+>guru@ubuntu:~$ ls -lt | head -6
+
+![img.png](img/ls_lt_head.png)

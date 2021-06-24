@@ -56,6 +56,9 @@ What is its structure?
 
 10) How to remove a user's password and provide him 
     with a password-free login for subsequent password change?
+    
+![img.png](img/user_pass_out.png)
+
 11) Display the extended format of information about the directory,
     tell about the information columns displayed on the terminal.
 12) What access rights exist and for whom (i. e., describe the main roles)?

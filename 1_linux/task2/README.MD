@@ -25,10 +25,35 @@ Task assignment.
 
 5) What are the commands for adding a user to the system?
    What are the basic parameters required to create a user?
+   
+>guru@ubuntu:~$ sudo useradd test1
+> 
+>guru@ubuntu:~$ sudo passwd test1
+>
+>guru@ubuntu:~$ sudo adduser test2
+
+![img.png](img/addUser.png)
+
 6) How do I change the name (account name) of an existing user?
-7) What is skell_dir? What is its structure?
+
+![img.png](img/chage_user_name.png)
+
+7) What is skell_dir?
+
+![img.png](img/skel.png) 
+
+What is its structure?
+
+![img.png](img/skel_change.png)
+   
 8) How to remove a user from the system (including his mailbox)?
+   
+![img.png](img/user_del_without_mail.png)
+
 9) What commands and keys should be used to lock and unlock a user account?
+   
+![img.png](img/user_lock_unlock.png)
+
 10) How to remove a user's password and provide him 
     with a password-free login for subsequent password change?
 11) Display the extended format of information about the directory,

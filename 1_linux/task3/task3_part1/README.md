@@ -56,6 +56,8 @@ user processes
 ![img.png](img/top_cpu.png)
 
 8. Display only the processes of a specific user.
+
+>guru@server1:~# ps -u guru
    
 ![img_1.png](img/ps_u.png)
 

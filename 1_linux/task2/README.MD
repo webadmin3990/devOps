@@ -89,6 +89,8 @@ What is its structure?
 16) Give definitions of sticky bits and mechanism of identifier substitution.
     Give an example of files and directories with these attributes.
     
-![img.png](img/sticy_bit.png)
+![img.png](img/sticky_bit.png)
 
 17) What file attributes should be present in the command script?
+
+![img.png](img/shell_ex.png)

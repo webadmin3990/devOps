@@ -59,13 +59,64 @@ user processes
 
 >guru@server1:~# ps -u guru
    
-![img_1.png](img/ps_u.png)
+![img.png](img/ps_u.png)
 
-9. What utilities can be used to analyze existing running tasks (by analyzing the help for the ps command)?
+9. What utilities can be used to analyze existing running tasks 
+   (by analyzing the help for the ps command)?
+   
+> guru@server1:~# ps -a
+>
+> guru@server1:~# ps -A <all proccess>
+> 
+> guru@server1:~# ps -d
+> guru@server1:~# ps -p PID
+
 10. What information does top command display?
+    
+![img.png](img/top_head.png)
+
 12. Display the processes of the specific user using the top command.
-12. What interactive commands can be used to control the top command? Give a couple of examples. 13. Sort the contents of the processes window using various parameters (for example, the amount of processor time taken up, etc.)
+    
+> guru@server1:~# top -u guru
+
+![img.png](img/top_guru.png)
+
+12. What interactive commands can be used to control the top command?
+    Give a couple of examples.
+
+> guru@server1:~# top -b
+> 
+> guru@server1:~# top -c
+> 
+> guru@server1:~# top -p PID
+
+13. Sort the contents of the processes window using various parameters
+    (for example, the amount of processor time taken up, etc.)
+    
+> guru@server1:~# htop
+
+![img.png](img/htop_sort.png)
+
 14. Concept of priority, what commands are used to set priority?
-15. Can I change the priority of a process using the top command? If so, how? 16. Examine the kill command. How to send with the kill command
+    
+![img.png](img/nice.png)
+
+15. Can I change the priority of a process using the top command? If so, how? 
+
+> guru@server1:~# top
+> 
+> Then hit "r" and enter the PID of a processe
+
+![img.png](img/top_renice.png)
+
+16. Examine the kill command. How to send with the kill command
 process control signal? Give an example of commonly used signals.
-17. Commands jobs, fg, bg, nohup. What are they for? Use the sleep, yes command to demonstrate the process control mechanism with fg, bg.
+    
+![img.png](img/kill.png)
+
+17. Commands jobs, fg, bg, nohup. What are they for?
+    Use the sleep, yes command to demonstrate the process control mechanism with fg, bg.
+    
+![img.png](img/jobs.png)
+
+![img.png](img/nohup.png)

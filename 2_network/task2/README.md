@@ -9,3 +9,8 @@ Configuring DHCP, DNS servers and dynamic routing using OSPF protocol
    (You can use DNSMASQ, BIND9 or something else).
 5. Check VM2 and VM3 for gaining access to DNS server (naming services).
 6. ***Using the scheme which follows, configure dynamic routing using OSPF protocol
+
+![img.png](img/server_1.png)
+![img.png](img/Server_2.png)
+![img.png](img/server_3.png)
+

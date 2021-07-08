@@ -18,6 +18,8 @@ B. Using Apache log example create a script to answer the following questions:
    2. What is the most requested page?
       
 >cat access.log | awk '{print $7}' | sort -n | uniq -c | sort -nr | head -1 
+> 
+>cut -d'"' -f4 access.log | grep -v '^-$' | grep -v '^http://semicomplete.com' | sort | uniq -c | sort -rg | head
 
    3. How many requests were there from each ip?
    4. What non-existent pages were clients referred to?

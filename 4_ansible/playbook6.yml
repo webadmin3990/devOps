@@ -1,0 +1,59 @@
+
+---
+- name: install apache
+  hosts: staging_servers
+  become: yes
+
+  vars:
+    source_folder: ./MyWebSite2
+    destin_folder: /var/www/html
+
+  tasks:
+
+  - name: Chek and Print LINUX Version
+    debug: var=ansible_os_family
+
+  - block:  #========Block for Ubuntu===========
+
+    - name: Install Apache WebServer
+      apt: name=apache2 update_cache=yes state=latest
+
+    - name: Start Web Servers and make it enable on boot
+      service: name=apache2 state=started enabled=yes
+
+    when: ansible_os_family == "Debian"
+
+  - block: #========Block for Red Hat===========
+
+    - name: Install Apache WebServer
+      yum: name=httpd state=latest
+
+    - name: Start Web Servers and make it enable on boot
+      service: name=httpd state=started enabled=yes
+
+    when: ansible_os_family == "RedHat"
+
+  - name: Copy my home page to servers
+    copy:
+      src: "{{ item }}"
+      dest: "{{ destin_folder }}"
+      mode: "0555"
+    with_fileglob:
+      - "{{ source_folder }}/*"
+      - "{{ source_folder }}/*/"
+
+#    loop:
+#      - "index.html"
+#      - "CNAME"
+    notify:
+       - Restart Apache Ubuntu
+       - Restart Apache RedHat
+
+  handlers:
+  - name: Restart Apache Ubuntu
+    service: name=apache2 state=restarted
+    when: ansible_os_family == "Debian"
+
+  - name: Restart Apache RedHat
+    service: name=httpd state=restarted
+    when: ansible_os_family == "RedHat"

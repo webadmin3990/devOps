@@ -1,0 +1,27 @@
+
+---
+- name: install apache
+  hosts: staging_servers
+  become: yes
+
+  vars:
+    source_file: ./MyWebSite/index.html
+    destin_file: /var/www/html
+
+  tasks:
+  - name: Install Apache WebServer
+    apt: name=apache2 update_cache=yes state=latest
+
+  - name: Copy my home page to servers
+    copy:
+      src: "{{ source_file }}"
+      dest: "{{ destin_file }}"
+      mode: "0555"
+    notify: Restart Apache
+
+  - name: Start Web Servers and make it enable on boot
+    service: name=apache2 state=started enabled=yes
+
+  handlers:
+  - name: Restart Apache
+    service: name=apache2 state=restarted

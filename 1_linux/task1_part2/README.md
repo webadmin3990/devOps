@@ -53,7 +53,7 @@ Task1.Part2
 - delete the previously created subdirectory with the file requesting removal;
 - delete the file copied to the home directory.
 
-![img.png](img/touch_rm.gif)
+![img.png](img/link.gif)
 
 6) Perform the following sequence of operations:
 - create a subdirectory test in the home directory;
